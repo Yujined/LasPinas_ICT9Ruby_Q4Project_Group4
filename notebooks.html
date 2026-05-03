@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Notebooks</title>
+
+<style>
+
+.dashboard{
+    background-color: rgb(108, 67, 50);
+    left: 0;
+    top: 0;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100vh;
+    width: 250px;
+    padding: 20px;
+    z-index: 1000;
+    overflow-y: auto;
+    position: fixed;
+}
+
+.nav-link{
+    color: rgb(243, 223, 216);
+    font-family: 'Times New Roman', Times, serif;
+    display: block;
+    margin: 10px 0;
+    text-decoration: none;
+}
+
+.nav-link:hover{
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 5px;
+    padding-left: 5px;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.main{
+    margin-left: 340px;
+    padding: 25px;
+    font-family: Arial;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.card{
+    position: relative;
+    background: white;
+    border-radius: 12px;
+    padding: 15px;
+    padding-top: 25px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+}
+
+.card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.card::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 6px;
+    background-color: rgb(108, 67, 50);
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.card-img{
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.card h3{
+    margin: 0 0 10px;
+}
+
+.title-highlight{
+    display: inline-block;
+    background-color: rgb(108, 67, 50); 
+    color: white;
+    padding: 10px 20px;
+    border-radius: 12px; 
+    margin-bottom: 10px;
+}
+
+.main p{
+    margin-top: 0;
+    margin-left: 5px;
+}
+
+</style>
+</head>
+
+<body>
+
+<nav class="dashboard d-flex flex-column">
+
+    <div class="container-fluid">
+
+        <center>
+            <a class="logo" href="#">
+                <img src="TLOGO.jpg.jpg" alt="logo" height="200px">
+            </a>
+        </center>
+
+        <br>
+
+        <ul class="nav flex-column mt-3">
+
+            <li class="nav-item">
+                <a class="nav-link" href="dashboard.html">Dashboard</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="notebooks.html">Virtual Notebooks</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="tasks.html">Tasks</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="profile.html">Profile</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Logout</a>
+            </li>
+
+        </ul>
+
+    </div>
+</nav>
+
+<div class="main">
+
+    <h1 class="title-highlight">NOTEBOOKS</h1>
+    <p>Select a subject.</p>
+
+    <div class="grid">
+
+        <div class="card">
+            <img src="FILIPINO.jpg" alt="Filipino" class="card-img">
+            <h3>Filipino</h3>
+            <p>Grade 9 - 2025/2026</p>
+        </div>
+
+        <div class="card">
+            <img src="ENGLISH.webp" alt="English" class="card-img">
+            <h3>English</h3>
+            <p>Grade 9 - 2025/2026</p>
+        </div>
+
+        <div class="card">
+            <img src="MATH.jpg" alt="Math" class="card-img">
+            <h3>Math</h3>
+            <p>Grade 9 - 2025/2026</p>
+        </div>
+
+        <div class="card">
+            <img src="SCIENCE.jpg" alt="Science" class="card-img">
+            <h3>Science</h3>
+            <p>Grade 9 - 2025/2026</p>
+        </div>
+
+        <div class="card">
+            <img src="SOCIAL STUDIES.jpg" alt="Social Studies" class="card-img">
+            <h3>Social Studies</h3>
+            <p>Grade 9 - 2025/2026</p>
+        </div>
+
+        <div class="card">
+            <img src="VALUES EDUCATION.jpg" alt="Values Education" class="card-img">
+            <h3>Values Education</h3>
+            <p>Grade 9 - 2025/2026</p>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
