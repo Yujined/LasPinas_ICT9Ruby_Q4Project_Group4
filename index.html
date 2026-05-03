@@ -57,24 +57,17 @@ body{background-color: rgb(243, 223, 216);}
 
         function authenticate(){
             var username = document.getElementById('user').value;
-            var password = document.getElementById('pass')value;
+            var password = document.getElementById('pass').value;
 
-            if(username === 'TTTsahur' && password !== '676767'){
+            if(username === 'TTTsahur' && password === '676767'){
                 alert ("Welcome" + username);
                 window.location.href = "dashboard.html";
-                return false;
             }else {
                 alert ("Invalid user");
-                return false;
             }
         }
 
-            if(password === '676767'){
-                alert ("Welcome" + username);
-            }else {
-                alert ("Invalid Password!");
-            }
-        }
+        
     </script>
    
 </script>
