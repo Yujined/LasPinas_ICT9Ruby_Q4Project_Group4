@@ -37,7 +37,7 @@ body{background-color: rgb(243, 223, 216);}
 <div class="container">
     <img src="TLOGO.jpg" class="logo">
   <p class="input"> LOGIN PAGE </p>
-   <form onsubmit="authenticate(event)">
+   <form onsubmit="authenticate()">
 
         <label class="text-light">Username: </label>
         <input type="" id="user" placeholder="Enter Username" required>
@@ -45,9 +45,9 @@ body{background-color: rgb(243, 223, 216);}
         <label class="text-light">Password: </label>
         <input type="text" id="pass" placeholder="Enter the Password" required>
 <br><br><br>
+        <input type="submit" value="Login" class="loginbtn">
         <input type="reset" value="Cancel" class="cancelbtn">
-   </form>
-      <button type="button" onclick="authenticate()">Login</button>
+      </form>
 <br>
 <p class="quote"> "If you can't fly, then run, if you can't run, then walk, 
     if you can't walk, then crawl, but whatever you do, you have to keep moving forward." — Martin Luther King, Jr. </p>
@@ -55,8 +55,7 @@ body{background-color: rgb(243, 223, 216);}
 </div>
    <script> 
 
-        function authenticate(event){
-            event.preventDefault(;
+        function authenticate(){
             var username = document.getElementById('user').value;
             var password = document.getElementById('pass').value;
 
