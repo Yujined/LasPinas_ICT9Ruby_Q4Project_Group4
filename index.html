@@ -55,7 +55,8 @@ body{background-color: rgb(243, 223, 216);}
 </div>
    <script> 
 
-        function authenticate(){
+        function authenticate(event){
+            event.preventDefault(;
             var username = document.getElementById('user').value;
             var password = document.getElementById('pass').value;
 
