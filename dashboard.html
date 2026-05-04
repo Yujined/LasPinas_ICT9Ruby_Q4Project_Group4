@@ -16,33 +16,16 @@
         display: flex;
         height: 100vh;
     }
-
     
-    .sidebar {
-        width: 220px;
-        background-color: #5a3829;
-        color: white;
-        padding: 20px;
-    }
-
-    .sidebar h2 {
-        text-align: center;
-        margin-bottom: 30px;
-    }
-
-    .sidebar a {
-        display: block;
-        color: white;
-        text-decoration: none;
-        padding: 10px;
-        margin: 10px 0;
-        border-radius: 5px;
-    }
-
-    .sidebar a:hover {
-        background-color: #7a4a34;
-    }
-
+ .dashboard{
+    background-color: rgb(108, 67, 50);
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 250px;
+    padding: 20px;
+    position: fixed;
+}
    
     .main {
         flex: 1;
@@ -117,15 +100,21 @@
 </head>
 <body>
 
-<div class="container">
-    <div class="sidebar">
-        <h2>Dashboard</h2>
-        <a href="#">Dashboard</a>
-        <a href="#">Virtual Notebooks</a>
-        <a href="#">Tasks</a>
-        <a href="#">Profile</a>
-        <a href="#">Logout</a>
-    </div>
+<nav class="dashboard">
+
+    <center>
+        <img src="TLOGO.jpg" height="200px">
+    </center>
+
+    <ul>
+        <li><a class="nav-link" href="dashboard.html">Dashboard</a></li>
+        <li><a class="nav-link" href="notebooks.html">Virtual Notebooks</a></li>
+        <li><a class="nav-link" href="tasks.html">Tasks</a></li>
+        <li><a class="nav-link" href="profile.html">Profile</a></li>
+        <li><a class="nav-link" href="index.html">Logout</a></li>
+    </ul>
+
+</nav>
 
     <div class="main">
         <div class="header">
